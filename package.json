@@ -1,7 +1,24 @@
 {
   "name": "desafio-tecnico",
   "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/MatheusVictor01/Desafio_tecnico-ASC#readme",
+  "bugs": {
+    "url": "https://github.com/MatheusVictor01/Desafio_tecnico-ASC/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MatheusVictor01/Desafio_tecnico-ASC.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "cypress.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
   "devDependencies": {
     "cypress": "^13.0.0"
-  }
+  },
+  "keywords": []
 }
