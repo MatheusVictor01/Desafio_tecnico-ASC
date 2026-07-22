@@ -2,9 +2,9 @@ describe('Login', () => {
   it('Deve realizar o criar login com sucesso', () => {
     cy.start()
     cy.goTo('a', 'Signup / Login')
-//criar um perfil de usuário manual os dados
+  
     cy.get('[data-qa="signup-name"]').type("Matheus")
-    cy.get('[data-qa="signup-email"]').type("Matheus1.@teste.com")
+    cy.get('[data-qa="signup-email"]').type("Matheus2.@teste.com")
     cy.get('[data-qa="signup-button"]').click()
     cy.get('#id_gender1').click()
     cy.get('[data-qa="password"]').type("Katana@123")
@@ -23,18 +23,18 @@ describe('Login', () => {
     cy.get('[data-qa="continue-button"]').click()
 
   })
-//login com um usuário já criado
-  it.only('login com sucesso', ()=> {
+  
+  it.only('login com sucesso', () => {
     cy.start()
     cy.goTo('a', 'Signup / Login')
-    cy.submitLoginForm('Matheus1.@teste.com','Katana@123')
+    cy.submitLoginForm('Matheus2.@teste.com', 'Katana@123')
   })
-//tentativa de login com usuário valido e senha invalida + validação de mensagem
-  it('Login com senha invalida', ()=> {
+  
+  it('Login com senha invalida', () => {
     cy.start()
     cy.goTo('a', 'Signup / Login')
-    cy.submitLoginForm('Matheus1.@teste.com','Katana124')
-     
+    cy.submitLoginForm('Matheus1.@teste.com', 'Katana124')
+
     cy.contains('Your email or password is incorrect!')
       .should('be.visible')
       .and('have.text', 'Your email or password is incorrect!')
