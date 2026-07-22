@@ -1,7 +1,3 @@
-# Desafio_tecnico-ASC
-
----
-
 # 🧪 Desafio Técnico - Automação de Testes (UI & API) com Cypress
 
 Este repositório contém a suíte de testes automatizados para a aplicação [Automation Exercise](https://automationexercise.com/), cobrindo cenários de ponta a ponta (E2E) para interface de usuário (UI) e validações de rotas de API.
@@ -26,38 +22,6 @@ DESAFIO TÉCNICO/
 ├── package.json                         # Dependências e scripts do projeto
 └── README.md                            # Documentação do projeto
 ```
-
-
-
-# nteúdo do `README.md`
-
-```markdown
-# 🧪 Desafio Técnico - Automação de Testes (UI & API) com Cypress
-
-Este repositório contém a suíte de testes automatizados para a aplicação [Automation Exercise](https://automationexercise.com/), cobrindo cenários de ponta a ponta (E2E) para interface de usuário (UI) e validações de rotas de API.
-
----
-
-## 📁 Estrutura do Projeto
-
-```text
-DESAFIO TÉCNICO/
-├── cypress/
-│   ├── e2e/
-│   │   ├── API/
-│   │   │   └── 01_apiProducts.cy.js    # Testes de integração de API
-│   │   └── UI/
-│   │       ├── 01_Login.cy.js          # Testes de fluxo de Login e Cadastro
-│   │       └── 02_BuyItem.cy.js        # Testes de Busca de Produtos e Carrinho
-│   ├── fixtures/
-│   │   └── example.json
-│   └── support/
-├── cypress.config.js                    # Configurações do Cypress
-├── package.json                         # Dependências e scripts do projeto
-└── README.md                            # Documentação do projeto
-```
-
----
 
 ## 🛠️ 1. Pré-requisitos
 
