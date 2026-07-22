@@ -1,7 +1,3 @@
-# Desafio_tecnico-ASC
-
----
-
 # 🧪 Desafio Técnico - Automação de Testes (UI & API) com Cypress
 
 Este repositório contém a suíte de testes automatizados para a aplicação [Automation Exercise](https://automationexercise.com/), cobrindo cenários de ponta a ponta (E2E) para interface de usuário (UI) e validações de rotas de API.
