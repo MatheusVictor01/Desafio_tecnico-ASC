@@ -24,7 +24,7 @@ describe('Login', () => {
 
   })
   
-  it.only('login com sucesso', () => {
+  it('login com sucesso', () => {
     cy.start()
     cy.goTo('a', 'Signup / Login')
     cy.submitLoginForm('Matheus2.@teste.com', 'Katana@123')

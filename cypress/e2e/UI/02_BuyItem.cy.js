@@ -11,9 +11,9 @@ describe('Pesquisa e Produtos', () => {
     cy.contains('.productinfo', 'Fancy Green Top')
       .should('be.visible')
   })
-  it.only('Deve adicionar o produto pesquisado ao carinho e validar a inclusão', () => {
+  it('Deve adicionar o produto pesquisado ao carinho e validar a inclusão', () => {
     cy.contains('.productinfo', 'Fancy Green Top')
-    cy.contains('a', 'Add to cart').click()
+      .contains('a', 'Add to cart').click()
     cy.contains('a', 'View Cart').click()
     cy.contains('h4', 'Fancy Green Top')
       .should('be.visible')
